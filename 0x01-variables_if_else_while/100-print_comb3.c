@@ -6,27 +6,27 @@
 * Description:positive or negative
 *
 * Return: Always 0 (Success)
-*/
+*/	
 int main(void)
 {
-	int t, j;
+	int n, x;
 
-for (t = '0'; t <= '9'; t++)
-{
-	for (j = '0'; j <='9'; j++)
+	for (n = 48; n <= 56; n++)
 	{
-		if (j > t)
+		for (x = 49; x <= 57; x++)
 		{
-			putchar(j);
-			putchar(t);
-			if (t != '8' || j != '9')
+			if (m > n)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(n);
+				putchar(x);
+				if (n != 56 || x != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-}
 	putchar('\n');
 	return (0);
 }
