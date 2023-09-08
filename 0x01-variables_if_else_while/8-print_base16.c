@@ -14,7 +14,7 @@ char n;
 for (n = '0'; n <= '9' ; n++)
 	putchar(n);
 for (x = 'a'; x <= 'f' ; x++)
-	putchar(n);
+	putchar(x);
 putchar('\n');
 return (0);
 }
