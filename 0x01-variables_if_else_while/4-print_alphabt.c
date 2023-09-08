@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	char alpha ;
+	char alpha = 'a';
 
-	for (alpha = 'a' ; alpha <= 'z' ; alpha++)
+	while (alpha <= 'z')
 	{
 		if (alpha != 'e' && alpha != 'q')
 		{
