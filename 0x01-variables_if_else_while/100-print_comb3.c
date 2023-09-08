@@ -11,15 +11,15 @@ int main(void)
 {
 	int t, j;
 
-for (t = 48; t <= 56; t++)
+for (t = '0'; t <= '9'; t++)
 {
-	for (j = 49; j <= 57; j++)
+	for (j = '0'; j <='9'; j++)
 	{
 		if (j > t)
 		{
 			putchar(j);
 			putchar(t);
-			if (t != 56 || j != 57)
+			if (t != '8' || j != '9')
 			{
 				putchar(',');
 				putchar(' ');
