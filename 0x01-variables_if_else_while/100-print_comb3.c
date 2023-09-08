@@ -13,7 +13,7 @@ int main(void)
 
 	for (digit = 0; digit < 9; digit++)
 	{
-		for (digit2 = digit + 1; digit1 < 10; digit1++)
+		for (digit1 = digit + 1; digit1 < 10; digit1++)
 		{
 			putchar((digit % 10) + '0');
 			putchar((digit1 % 10) + '0');
