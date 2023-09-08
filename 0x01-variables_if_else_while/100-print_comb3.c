@@ -9,24 +9,23 @@
 */	
 int main(void)
 {
-	int n, x;
+	int digit, digit1;
 
-	for (n = 48; n <= 56; n++)
+	for (digit = 0; digit < 9; digit++)
 	{
-		for (x = 49; x <= 57; x++)
+		for (digit2 = digit + 1; digit1 < 10; digit1++)
 		{
-			if (m > n)
-			{
-				putchar(n);
-				putchar(x);
-				if (n != 56 || x != 57)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+			putchar((digit % 10) + '0');
+			putchar((digit1 % 10) + '0');
+
+			if (digit == 8 && digit1 == 9)
+				continue;
+			
+			putchar(',');
+			putchar(' ');
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
-}
