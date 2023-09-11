@@ -20,8 +20,8 @@ for (a = 48; a <= 56; a++)
 
 		if (a != 56 || b != 57)
 		{
-		putchar(',');
-		putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
 	}
 }
