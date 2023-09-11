@@ -15,8 +15,8 @@ for (a = 0; a < 10; a++)
 {
 	for (a = b + 1; a < 10; b++)
 	{
-		putchar(a + '0');
-		putchar(b + '0');
+		putchar(a);
+		putchar(b);
 
 		if (a != 8 || b != 9)
 		{
