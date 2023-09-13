@@ -3,7 +3,7 @@
 *_islower - unction controls if a character is in lowercase
 *Return: return 0 or 1
 */
-int _islower(int x)
+int _islower(int c)
 {
 if (c >= 'a' && c <= 'z')
 	return (1);
