@@ -1,10 +1,9 @@
 #include "main.h"
-#include "main.h"
 /**
- * main - check the code.
- * print_alphabet_x10 -  function that prints 10 times the alphabet
- * Return: Always 0.
- */
+*print_alphabet_x10 -  function prints alphabet letter
+*desc: The function uses loop to operate
+*Return: no return
+*/
 void print_alphabet_x10(void)
 {
 	int counter = 0;
