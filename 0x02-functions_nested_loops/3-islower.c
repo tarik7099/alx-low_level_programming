@@ -1,7 +1,8 @@
 #include "main.h"
 /**
 *_islower - unction controls if a character is in lowercase
-*Return: return 0 or 1
+*@c : membres
+* Return: return 0 or 1
 */
 int _islower(int c)
 {
