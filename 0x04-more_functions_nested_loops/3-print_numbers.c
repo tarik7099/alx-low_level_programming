@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include "main.h"
 /**
  * print_numbers - function that prints the numb * ers, from 0 to 9
  * main - check the code
@@ -6,10 +8,10 @@
 void print_numbers(void)
 {
 int x;
-while (x >= 0 && x <= 9)
-	}
-	num++;
-	_putchar(x + 48)
+
+	for (x = 0; x < 10; x++)
+	{
+		putchar(48 + x);
 	}
 putchar('\n');
 }
