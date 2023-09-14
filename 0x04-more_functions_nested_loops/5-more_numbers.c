@@ -10,9 +10,9 @@ void more_numbers(void)
 
 	for (num2 = 1; num2 <= 10; num2++)
 	{
-		for (num1 = 0; num1 <= 14; num1++)
+		for (count = 0; count <= 14; count++)
 		{
-			num = count;
+			num1 = count;
 			if (num1 > 9)
 			{
 				_putchar(1 + 48);
