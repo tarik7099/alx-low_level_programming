@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * _strcmp - compare 2 strings.
- * @s1: string to be compared.
- * @s2: string for comparation.
- * Return: Difference.
+ * _strncpy -  function that copies a string..
+ * @src: cadena a copiar
+ * @dest: destino de la cadena.
+ * @n: number.
+ * Return: void
  */
 char *_strncpy(char *dest, char *src, int n)
 {
