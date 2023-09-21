@@ -1,18 +1,17 @@
 #include "main.h"
 /**
- * _strcmp - compare 2 strings.
- * @s1: string to be compared.
- * @s2: string for comparation.
- * Return: Difference.
+ * reverse_array -  function that reverses the content of an array of integers.
+ * @a: puntero del array.
+ * @n: numero de elementos del array.
+ *Return: nothing
  */
-
 void reverse_array(int *a, int n)
 {
-	int  A , b, c;
-	for (A = 0, b = (n - 1); A < b; A++, b--)
+int i, b, c;
+	for (i = 0, b = (n - 1); i < b; i++, ib--)
 	{
-		c = a[A];
-		a[A] = a[b];
+		c = a[i];
+		a[i] = a[b];
 		a[b] = c;
 	}
 }
