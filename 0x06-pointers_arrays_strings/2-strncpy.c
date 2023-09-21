@@ -5,19 +5,23 @@
  * @s2: string for comparation.
  * Return: Difference.
  */
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int equal = 0;
-	while (*s1)
+	int index;
+
+	index = 0;
+
+	while (src[index] != '\0' && index < n)
 	{
-		if(*s1 != *s2)
-		{
-			equal = ((int)*s1 -48) - ((int)*s2 -48);
-			break;
-		}
-		s1++;
-		s2++;
+		dest[index] = src[index];
+		index++;
 	}
-	return (equal);
-	
+
+	while (index < n)
+	{
+		dest[index] = '\0';
+		index++;
+	}
+
+	return (dest);
 }
