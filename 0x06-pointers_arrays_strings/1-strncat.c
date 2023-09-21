@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _strncat - concatenate strings, defining the size of second string.
  * @dest: string with concatenation
@@ -15,8 +15,8 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (lenD < n)
 	{
-		dest[i] = '\0';
-		i++;
+		dest[lenD] = '\0';
+		lenD++;
 	}
 	return (dest);
 }
