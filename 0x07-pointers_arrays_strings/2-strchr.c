@@ -6,12 +6,13 @@
  * Return: the pointer to the first occurrence of the character c.
  */
 
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 int strC;
 for (strC = 0; s[strC] !=  '\0'; strC++)
-{
+	{
 	if (s[strC] == c)
 		return (s + strC);
-}
+	}
+return ('\0');
 }
