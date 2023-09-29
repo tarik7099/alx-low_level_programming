@@ -20,18 +20,17 @@ int _sqrt_recursion(int n)
 int _squar_operation(int n, int v)
 {
 
-	if ((v * v) > n)
-	{
-		return (-1);
-	}
-	if (v * v == n)
-	{
-		return (v);
-	}
-	 if (n < 0)
-        {
-                return (-1);
-        }
-	return (_squar_operation(n, v + 1));
+if ((v * v) > n)
+{
+	return (-1);
 }
-
+if (v * v == n)
+{
+	return (v);
+}
+if (n < 0)
+{
+return (-1);
+}
+return (_squar_operation(n, v + 1));
+}
