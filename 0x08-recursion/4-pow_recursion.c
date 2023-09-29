@@ -18,5 +18,5 @@ int _pow_recursion(int value, int power)
 		return (1);
 	}
 	else
-		return (power * _pow_recursion(value, power - 1));
+		return (value * _pow_recursion(value, power - 1));
 }
