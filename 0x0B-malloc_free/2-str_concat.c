@@ -20,7 +20,7 @@ if (s2 == NULL)
 while (s1[sizeC1])
 	sizeC1++;
 while (s2[sizeC2])
-	sizeC2++;	
+	sizeC2++;
 conste = malloc((sizeC1 + sizeC2 + 1) * sizeof(char));
 if (conste == 0)
 {
