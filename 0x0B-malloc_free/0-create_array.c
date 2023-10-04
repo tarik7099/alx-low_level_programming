@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdlib.h>
 /**
  * create_array -  function creates an array of chars.
@@ -14,7 +14,7 @@ if (size == 0)
 {
 return (NULL);
 }
-arrayOfchar = malloc(n * sizeof(char));
+arrayOfchar = malloc(size * sizeof(char));
 if (arrayOfchar == 0)
 {
         return (NULL);
