@@ -19,7 +19,7 @@ for (; str[j] != '\0'; j++)
 {
 	;
 }
-conste = malloc(i * sizeof(*str) + 1);
+conste = malloc(j * sizeof(*str) + 1);
 if (conste == 0)
 	return (NULL);
 else
