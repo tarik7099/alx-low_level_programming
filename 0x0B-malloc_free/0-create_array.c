@@ -17,11 +17,11 @@ return (NULL);
 arrayOfchar = malloc(size * sizeof(char));
 if (arrayOfchar == 0)
 {
-        return (NULL);
+return (NULL);
 }
 for (n = 0; n < size; n++)
 {
-        arrayOfchar[n] = c;
+arrayOfchar[n] = c;
 }
 return (arrayOfchar);
 }
