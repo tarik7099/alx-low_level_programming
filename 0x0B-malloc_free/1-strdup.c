@@ -9,13 +9,13 @@
  */
 char *_strdup(char *str)
 {
-unsigned int i, j;
+int i = 0, j = 0;
 char *conste;
 if (str == 0)
 {
 	return (NULL);
 }
-for (i = 0; str != '\0'; i++)
+for (; str[j] != '\0'; j++)
 {
 	;
 }
@@ -24,9 +24,9 @@ if (conste == 0)
 	return (NULL);
 else
 {
-	for (j = 0; j < str; j++)
+	for (; i < j; i++)
 	{
-		conste[j] = str[i];
+		conste[i] = str[i];
 	}
 }
 return (conste);
