@@ -19,10 +19,11 @@ if (s1 == NULL)
 if (s2 == NULL)
 	s2 = "";
 
-while (s1[len1] != '\0')
-	len1++;
-while (s2[len2] != '\0')
-	len2++;
+for (len1 = 0; s1[len1] != '\0'; len1++)
+		;
+
+for (len2 = 0; s2[len2] != '\0'; len2++)
+		;
 if (n >= len2)
 	n = len2;
 result = malloc((len1 + n + 1) * sizeof(char));
