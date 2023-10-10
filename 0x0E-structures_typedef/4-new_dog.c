@@ -28,8 +28,8 @@ for (owner_len = 0; name[owner_len]; owner_len++)
 {
 ;
 }
-dog_ptr->name = malloc(name_len + 1);
-dog_ptr->owner = malloc(owner_len + 1);
+dog_ptr->name = malloc(name_len);
+dog_ptr->owner = malloc(owner_len);
 if (dog_ptr->name == NULL || dog_ptr->owner == NULL)
 {
 free(dog_ptr->name);
