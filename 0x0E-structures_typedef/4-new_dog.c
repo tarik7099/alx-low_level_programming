@@ -4,31 +4,12 @@
 #include "dog.h"
 
 /**
- * new_dog - function that Creates a new dog with a copy of name and owner.
- * @name:  name dogs.
- * @age: age of the dogs.
- * @owner: owner dogs.
- * Return: A pointer to the new dog, or NULL on failure.
+ * _strlen - returns the length of a string
+ * @s: string to evaluate
+ *
+ * Return: the length of the string
  */
-char *_strcpy(char *dest, char *src)
-{
-	int len, i;
 
-	len = 0;
-
-	while (src[len] != '\0')
-	{
-		len++;
-	}
-
-	for (i = 0; i < len; i++)
-	{
-		dest[i] = src[i];
-	}
-	dest[i] = '\0';
-
-	return (dest);
-}
 int _strlen(char *s)
 {
 	int i;
@@ -42,6 +23,38 @@ int _strlen(char *s)
 
 	return (i);
 }
+/**
+ * _strcpy - dog struct
+ * @dest: dog's name.
+ * @src: dog's age.
+ * Return: new dog_t
+ */
+char *_strcpy(char *dest, char *src)
+{
+int len, i;
+
+len = 0;
+while (src[len] != '\0')
+{
+	len++;
+}
+
+for (i = 0; i < len; i++)
+{
+dest[i] = src[i];
+}
+dest[i] = '\0';
+
+return (dest);
+}
+
+/**
+ * new_dog - function that Creates a new dog with a copy of name and owner.
+ * @name:  name dogs.
+ * @age: age of the dogs.
+ * @owner: owner dogs.
+ * Return: A pointer to the new dog, or NULL on failure.
+ */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
