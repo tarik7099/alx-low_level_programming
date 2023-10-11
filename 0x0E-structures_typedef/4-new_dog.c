@@ -64,8 +64,11 @@ free(dog_ptr->owner);
 free(dog_ptr);
 return (NULL);
 }
+else
+{	
 _strcpy(dog_ptr->name, name);
 _strcpy(dog_ptr->owner, owner);
+}
 dog_ptr->age = age;
 return (dog_ptr);
 }
