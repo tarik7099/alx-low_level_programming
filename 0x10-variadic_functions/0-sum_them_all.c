@@ -14,12 +14,12 @@ if (n == 0)
 	return (0);
 va_list args;
 unsigned int i;
-int resulte = 0;
+int sum = 0;
 va_start(args, n);
 for (i = 0; i < n; i++)
 {
-	resulte = resulte + va_arg(args, int);
+	sum += sum + va_arg(args, int);
 }
-va_end(list);
-return (result);
+va_end(args);
+return (sum);
 }
