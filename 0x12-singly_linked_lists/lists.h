@@ -10,7 +10,7 @@
  * @next: point to end
  *
  * Description: singly linked list node
-/* Structure for list_t */
+*/
 typedef struct list_s
 {
 char *str;
