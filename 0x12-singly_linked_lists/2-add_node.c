@@ -29,8 +29,10 @@ free(n);
 return (NULL);
 }
 while (str[len])
-	len++;
-n->len = len;	
+{
+len++;
+}
+n->len = len;
 n->next = *head;
 *head = n;
 
