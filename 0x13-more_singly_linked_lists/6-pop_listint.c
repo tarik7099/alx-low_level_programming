@@ -20,5 +20,5 @@ value = (*head)->n;
 temp = *head;
 *head = (*head)->next;
 free(temp);
-return (data);
+return (value);
 }
