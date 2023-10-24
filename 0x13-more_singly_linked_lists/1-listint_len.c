@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * struct listint_t - singly linked list.
- * 
- * @h: a pointer to the head of the list 
+ * listint_len - function that returns the
+ * number of elements in a listint_t list.
+ *
+ * @h: a pointer to the head of the list
  * Return: count
  */
 
