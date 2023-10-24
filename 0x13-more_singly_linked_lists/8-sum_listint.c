@@ -12,8 +12,8 @@ int sum_list = 0;
 
 while (head != NULL)
 {
-sum_list = sun_list + head->n;
+sum_list = sum_list + head->n;
 head = head->next;
 }
-return (sum);
+return (sum_list);
 }
