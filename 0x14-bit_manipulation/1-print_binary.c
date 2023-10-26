@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * print_binary -function  Prints the binary representation of an unsigned long int
+ * print_binary -function  Prints the
+ *  binary representation of an unsigned long int
  * @n: The number to be converted and printed
  */
 
