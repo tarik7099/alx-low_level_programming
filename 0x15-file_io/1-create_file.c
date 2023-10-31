@@ -12,13 +12,13 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-    int fp, len, written;
+    int fp, len, Write;
 
     if (filename == NULL)
         return (-1);
 
     fp = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
-    if (fd == -1)
+    if (fp == -1)
         return (-1);
 
     if (text_content == NULL)
@@ -31,11 +31,11 @@ int create_file(const char *filename, char *text_content)
     while (text_content[len] != '\0')
         len++;
 
-    written = write(fd, text_content, len);
+    Write = write(fp, text_content, len);
 
     close(fp);
 
-    if (written == len)
+    if (Write == len)
         return (1);
     else
         return (-1);
