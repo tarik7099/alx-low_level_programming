@@ -16,7 +16,7 @@ if (ht == NULL || key == NULL || *key == '\0')
 return (NULL);
 }
 idx = key_index((const unsigned char *)key, ht->size);
-current_node = ht->array[index];
+current_node = ht->array[idx];
 while (current_node != NULL)
 {
 if (strcmp(current_node->key, key) == 0)
